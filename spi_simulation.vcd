@@ -1,0 +1,87 @@
+$date
+	Mon Jul 20 06:53:15 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module spi_tb $end
+$var wire 1 ! ready $end
+$var wire 1 " mosi $end
+$var wire 1 # cs_n $end
+$var wire 1 $ clk_out $end
+$var reg 1 % clk_in $end
+$var reg 1 & rst_n $end
+$var reg 1 ' start $end
+$var reg 8 ( tx_data [7:0] $end
+$scope module u_clk_div $end
+$var wire 1 % clk_in $end
+$var wire 1 & rst_n $end
+$var parameter 32 ) DIVISOR $end
+$var reg 1 $ clk_out $end
+$var reg 8 * counter [7:0] $end
+$upscope $end
+$scope module u_spi_master $end
+$var wire 1 $ clk $end
+$var wire 1 & rst_n $end
+$var wire 1 ' start $end
+$var wire 8 + tx_data [7:0] $end
+$var parameter 2 , state_done $end
+$var parameter 2 - state_idle $end
+$var parameter 2 . state_transfer $end
+$var reg 3 / bit_counter [2:0] $end
+$var reg 1 # cs_n $end
+$var reg 2 0 current_state [1:0] $end
+$var reg 1 " mosi $end
+$var reg 2 1 next_state [1:0] $end
+$var reg 1 ! ready $end
+$var reg 8 2 shift_reg [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 .
+b0 -
+b10 ,
+b100 )
+$end
+#0
+$dumpvars
+b0 2
+b0 1
+b0 0
+b0 /
+b0 +
+b0 *
+b0 (
+0'
+0&
+0%
+0$
+1#
+0"
+1!
+$end
+#41500
+1%
+#50000
+b10101100 (
+b10101100 +
+1&
+#60000
+b1 1
+1'
+#83000
+0%
+#110000
+b0 1
+0'
+#124500
+b1 *
+1%
+#166000
+0%
+#180000
